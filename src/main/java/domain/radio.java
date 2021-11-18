@@ -7,6 +7,7 @@ public class Radio {
     private int minVolume;
     private int currentVolume;
     private int currentChanel;
+    private int entChanel;
 
     public void setMaxChanel() {
         maxChanel = 9;
@@ -58,6 +59,13 @@ public class Radio {
             }
         }
 
+    }
+    public void enterChanel(){
+        if (entChanel>=minChanel && entChanel<= maxChanel){
+            entChanel= entChanel;
+        }
+        else
+            return;
     }
 }
 
